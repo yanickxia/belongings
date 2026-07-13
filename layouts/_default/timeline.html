@@ -9,7 +9,7 @@
   <div class="tl-list">
     {{ range .Pages }}
     <a class="tl-item" href="{{ .RelPermalink }}">
-      {{ with .Params.image }}<span class="tl-thumb" style="background-image:url('{{ . | relURL }}')"></span>
+      {{ with .Params.image }}<span class="tl-thumb" style="background-image:url('{{ strings.TrimPrefix "/" . | relURL }}')"></span>
       {{ else }}<span class="tl-thumb tl-thumb--empty">📦</span>{{ end }}
       <span class="tl-body">
         <span class="tl-name">{{ .Title }}</span>

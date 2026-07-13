@@ -3,7 +3,7 @@
   <a class="back" href="{{ "/" | relURL }}">← 返回全部物品</a>
   <h1>{{ .Title }}</h1>
 
-  {{ with .Params.image }}<img class="detail-img" src="{{ . | relURL }}" alt="{{ $.Title }}">{{ end }}
+  {{ with .Params.image }}<img class="detail-img" src="{{ strings.TrimPrefix "/" . | relURL }}" alt="{{ $.Title }}">{{ end }}
 
   <table class="meta">
     <tr><th>分类</th><td>{{ .Params.category | default "—" }}</td></tr>

@@ -4,7 +4,7 @@
 <div class="grid">
   {{ range .Pages }}
   <a class="card" href="{{ .RelPermalink }}">
-    {{ with .Params.image }}<div class="card-img" style="background-image:url('{{ . | relURL }}')"></div>
+    {{ with .Params.image }}<div class="card-img" style="background-image:url('{{ strings.TrimPrefix "/" . | relURL }}')"></div>
     {{ else }}<div class="card-img card-img--empty">📦</div>{{ end }}
     <div class="card-body">
       <h3>{{ .Title }}</h3>
