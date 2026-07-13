@@ -1,0 +1,20 @@
+baseURL: "https://yanickxia.github.io/belongings/"
+languageCode: "zh-cn"
+title: "我曾拥有的物品"
+# baseURL 会在 CI 构建时自动覆盖为实际 Pages 地址
+
+params:
+  description: "记录我曾经拥有过的每一件物品，以及它们的故事。"
+  author: "yanickxia"
+
+taxonomies:
+  category: categories
+  disposal: disposals
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+permalinks:
+  items: "/items/:slug/"

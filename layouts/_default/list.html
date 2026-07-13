@@ -1,0 +1,19 @@
+{{ define "main" }}
+<a class="back" href="{{ "/" | relURL }}">← 返回首页</a>
+<h1>{{ .Title }}</h1>
+<div class="grid">
+  {{ range .Pages }}
+  <a class="card" href="{{ .RelPermalink }}">
+    {{ with .Params.image }}<div class="card-img" style="background-image:url('{{ . | relURL }}')"></div>
+    {{ else }}<div class="card-img card-img--empty">📦</div>{{ end }}
+    <div class="card-body">
+      <h3>{{ .Title }}</h3>
+      <div class="tags">
+        {{ with .Params.category }}<span class="tag">{{ . }}</span>{{ end }}
+        {{ if .Params.lost }}<span class="tag tag--lost">已失去</span>{{ else }}<span class="tag tag--own">拥有中</span>{{ end }}
+      </div>
+    </div>
+  </a>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article class="detail">
+  <a class="back" href="{{ "/" | relURL }}">← 返回全部物品</a>
+  <h1>{{ .Title }}</h1>
+
+  {{ with .Params.image }}<img class="detail-img" src="{{ . | relURL }}" alt="{{ $.Title }}">{{ end }}
+
+  <table class="meta">
+    <tr><th>分类</th><td>{{ .Params.category | default "—" }}</td></tr>
+    <tr><th>拥有起始</th><td>{{ .Params.acquired | default "—" }}</td></tr>
+    <tr><th>失去日期</th><td>{{ .Params.lost | default "—（仍拥有）" }}</td></tr>
+    <tr><th>去向</th><td>{{ .Params.disposal | default "—" }}</td></tr>
+    <tr><th>来源</th><td>{{ .Params.source | default "—" }}</td></tr>
+    <tr><th>购入价格</th><td>{{ if .Params.price }}¥{{ .Params.price }}{{ else }}—{{ end }}</td></tr>
+  </table>
+
+  <div class="content">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

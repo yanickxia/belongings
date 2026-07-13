@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{ $items := where .Site.RegularPages "Section" "items" }}
+
+<section class="stats">
+  <div class="stat"><span class="num">{{ len $items }}</span><span class="lbl">总物品</span></div>
+  <div class="stat"><span class="num">{{ len (where $items "Params.lost" "!=" "") }}</span><span class="lbl">已失去</span></div>
+  <div class="stat"><span class="num">{{ len (where $items "Params.lost" "") }}</span><span class="lbl">仍拥有</span></div>
+</section>
+
+<div class="grid">
+  {{ range $items.ByParam "acquired" | collections.Reverse }}
+  <a class="card" href="{{ .RelPermalink }}">
+    {{ with .Params.image }}<div class="card-img" style="background-image:url('{{ . | relURL }}')"></div>
+    {{ else }}<div class="card-img card-img--empty">📦</div>{{ end }}
+    <div class="card-body">
+      <h3>{{ .Title }}</h3>
+      <div class="tags">
+        {{ with .Params.category }}<span class="tag">{{ . }}</span>{{ end }}
+        {{ if .Params.lost }}<span class="tag tag--lost">已失去</span>{{ else }}<span class="tag tag--own">拥有中</span>{{ end }}
+      </div>
+      <p class="dates">
+        {{ with .Params.acquired }}{{ . }}{{ end }}
+        {{ if .Params.lost }} → {{ .Params.lost }}{{ end }}
+      </p>
+    </div>
+  </a>
+  {{ end }}
+</div>
+{{ end }}
