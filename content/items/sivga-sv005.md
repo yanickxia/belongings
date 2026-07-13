@@ -4,8 +4,8 @@ date: 2026-07-13
 draft: false
 category: "电子产品"
 acquired: "2020"
-lost: ""
-disposal: ""
+lost: "2025"
+disposal: "闲鱼出售 ¥360"
 source: "闲鱼二手"
 price: 350
 image: "/images/sivga-sv005.png"
