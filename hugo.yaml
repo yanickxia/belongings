@@ -1,4 +1,4 @@
-baseURL: "https://yanickxia.github.io/belongings/"
+baseURL: "https://belongings.pages.yanick.site/"
 languageCode: "zh-cn"
 title: "我曾拥有的物品"
 # baseURL 会在 CI 构建时自动覆盖为实际 Pages 地址
