@@ -4,8 +4,8 @@ date: 2026-07-13
 draft: false
 category: "机械键盘"
 acquired: "2013"
-lost: ""
-disposal: ""
+lost: "2025"
+disposal: "闲鱼出售(二手)"
 source: "淘宝"
 price: 439
 image: "/images/ducky-zero-2108.webp"

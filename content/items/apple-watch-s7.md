@@ -4,8 +4,8 @@ date: 2026-07-13
 draft: false
 category: "电子产品"
 acquired: "2021"
-lost: ""
-disposal: ""
+lost: "2025"
+disposal: "闲鱼出售(二手)"
 source: "Apple Store"
 price: 0
 image: "/images/apple-watch-s7.webp"

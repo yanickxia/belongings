@@ -1,5 +1,5 @@
 ---
-title: "LEOBOG A75(第二把)"
+title: "LEOBOG A75(芭比轴)"
 date: 2026-07-13
 draft: false
 category: "机械键盘"
