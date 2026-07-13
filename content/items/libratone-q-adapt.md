@@ -4,8 +4,8 @@ date: 2026-07-13
 draft: false
 category: "电子产品"
 acquired: "2019"
-lost: ""
-disposal: ""
+lost: "2025"
+disposal: "闲鱼出售 ¥320"
 source: "闲鱼二手"
 price: 759
 image: "/images/libratone-q-adapt.png"

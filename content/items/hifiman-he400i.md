@@ -4,8 +4,8 @@ date: 2026-07-13
 draft: false
 category: "电子产品"
 acquired: "2019"
-lost: ""
-disposal: ""
+lost: "2025"
+disposal: "闲鱼出售 ¥480"
 source: "天猫"
 price: 899
 image: "/images/hifiman-he400i.png"
