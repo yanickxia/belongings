@@ -12,6 +12,11 @@
   <header class="site-header">
     <a class="site-title" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
     <p class="site-desc">{{ .Site.Params.description }}</p>
+    <nav class="site-nav">
+      <a href="{{ "/" | relURL }}">全部</a>
+      <a href="{{ "/categories/" | relURL }}">分类</a>
+      <a href="{{ "/timeline/" | relURL }}">时间线</a>
+    </nav>
   </header>
   <main class="container">
     {{ block "main" . }}{{ end }}

@@ -1,0 +1,26 @@
+{{ define "main" }}
+<a class="back" href="{{ "/" | relURL }}">← 返回首页</a>
+<h1>时间线</h1>
+
+{{ $items := where .Site.RegularPages "Section" "items" }}
+{{ range $items.GroupByParam "acquired" | collections.Reverse }}
+<section class="tl-year">
+  <h2 class="tl-year-title">{{ .Key | default "未知年份" }}</h2>
+  <div class="tl-list">
+    {{ range .Pages }}
+    <a class="tl-item" href="{{ .RelPermalink }}">
+      {{ with .Params.image }}<span class="tl-thumb" style="background-image:url('{{ . | relURL }}')"></span>
+      {{ else }}<span class="tl-thumb tl-thumb--empty">📦</span>{{ end }}
+      <span class="tl-body">
+        <span class="tl-name">{{ .Title }}</span>
+        <span class="tl-meta">
+          {{ with .Params.category }}<span class="tag">{{ . }}</span>{{ end }}
+          {{ if .Params.lost }}<span class="tag tag--lost">{{ .Params.lost }} 失去 · {{ .Params.disposal }}</span>{{ else }}<span class="tag tag--own">拥有中</span>{{ end }}
+        </span>
+      </span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

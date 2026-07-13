@@ -7,10 +7,6 @@ params:
   description: "记录我曾经拥有过的每一件物品，以及它们的故事。"
   author: "yanickxia"
 
-taxonomies:
-  category: categories
-  disposal: disposals
-
 markup:
   goldmark:
     renderer:
