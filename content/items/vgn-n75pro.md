@@ -4,8 +4,8 @@ date: 2026-07-13
 draft: false
 category: "机械键盘"
 acquired: "2025"
-lost: ""
-disposal: ""
+lost: "2025"
+disposal: "闲鱼出售 ¥85"
 source: "闲鱼二手"
 price: 80
 switch: "蒸汽波 Pro"
