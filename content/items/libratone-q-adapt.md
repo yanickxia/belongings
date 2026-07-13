@@ -1,0 +1,14 @@
+---
+title: "小鸟 LIBRATONE Q ADAPT"
+date: 2026-07-13
+draft: false
+category: "电子产品"
+acquired: "2019"
+lost: ""
+disposal: ""
+source: "闲鱼二手"
+price: 759
+image: "/images/libratone-q-adapt.png"
+---
+
+2019 年 9 月在闲鱼入手的 LIBRATONE(小鸟)Q ADAPT 头戴式蓝牙耳机,成交价 759 元。北欧设计、可调降噪,颜值和做工都很在线。
