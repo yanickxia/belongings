@@ -31,7 +31,12 @@ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;backgr
 .detail{max-width:680px;margin:0 auto;padding-bottom:60px}
 .back{display:inline-block;margin:8px 0 20px;color:var(--accent);text-decoration:none;font-size:14px}
 .detail h1{font-size:26px;margin-bottom:20px}
-.detail-img{width:100%;border-radius:14px;margin-bottom:24px}
+.detail-img{width:100%;border-radius:14px;display:block}
+.gallery{margin-bottom:24px}
+.gallery-item{margin:0 0 12px}
+.gallery-item figcaption{margin-top:6px;font-size:12px;color:var(--muted);text-align:center}
+.gallery--multi{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:520px){.gallery--multi{grid-template-columns:1fr}}
 .meta{width:100%;border-collapse:collapse;margin-bottom:28px}
 .meta th{text-align:left;width:96px;padding:10px 12px;color:var(--muted);font-weight:500;border-bottom:1px solid var(--line);vertical-align:top}
 .meta td{padding:10px 12px;border-bottom:1px solid var(--line)}

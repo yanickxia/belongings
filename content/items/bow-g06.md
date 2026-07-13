@@ -8,7 +8,7 @@ lost: ""
 disposal: ""
 source: "京东"
 price: 179
-image: "/images/bow-g06.png"
+image: "/images/bow-g06.webp"
 ---
 
 2022 年 2 月在京东入手的航世(BOW)G06 三模机械键盘,成交价 179 元。紧凑布局、轻薄便携,通勤和办公两用的一把入门口粮键盘。

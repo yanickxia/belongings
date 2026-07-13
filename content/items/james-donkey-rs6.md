@@ -8,7 +8,10 @@ lost: ""
 disposal: ""
 source: "Jamesdonkey 旗舰店"
 price: 409
-image: "/images/james-donkey-rs6.png"
+switch: "佳达隆 G Pro 茶"
+mode: "三模"
+lighting: "下灯位"
+image: "/images/james-donkey-rs6.webp"
 ---
 
 2022 年 9 月入手的贱驴 James Donkey RS6 三模无线机械键盘,成交价 409 元。热插拔轴座、RGB 背光,复古配色加金属旋钮,颜值和手感都在线。

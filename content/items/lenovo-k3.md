@@ -8,7 +8,7 @@ lost: "2015"
 disposal: "丢失"
 source: "自购"
 price: 0
-image: "/images/lenovo-k3.png"
+image: "/images/lenovo-k3.webp"
 ---
 
 2015 年入手的联想 K3,还没来得及用出感情,就因为失窃而离开。

@@ -8,7 +8,7 @@ lost: ""
 disposal: ""
 source: "闲鱼二手"
 price: 42
-image: "/images/langtu-gold.png"
+image: "/images/langtu-gold.webp"
 ---
 
 闲鱼入手的狼途三模机械键盘,成交价 42 元。金轴,专为打字准备,无盒但线材齐全。

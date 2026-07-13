@@ -8,7 +8,7 @@ lost: "2012"
 disposal: "报废"
 source: "合约机"
 price: 0
-image: "/images/redmi-1.png"
+image: "/images/redmi-1.webp"
 ---
 
 作为合约机购入的红米 1,是早期性价比 Android 手机的代表。

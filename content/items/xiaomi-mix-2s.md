@@ -8,7 +8,7 @@ lost: ""
 disposal: ""
 source: "自购"
 price: 0
-image: "/images/xiaomi-mix-2s.png"
+image: "/images/xiaomi-mix-2s.webp"
 ---
 
 2020 年使用的小米 MIX 2S,陶瓷机身、全面屏,手感和质感都在线。

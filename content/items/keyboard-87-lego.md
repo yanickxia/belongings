@@ -8,7 +8,7 @@ lost: ""
 disposal: ""
 source: "闲鱼二手"
 price: 99
-image: "/images/keyboard-87-lego.png"
+image: "/images/keyboard-87-lego.webp"
 ---
 
 闲鱼清仓入手的 87 键乐高配色机械键盘,成交价 99 元。撞色键帽俏皮活泼,TKL 布局省桌面。

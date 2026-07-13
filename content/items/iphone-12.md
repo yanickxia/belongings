@@ -8,7 +8,7 @@ lost: "2024"
 disposal: "退役"
 source: "自购"
 price: 0
-image: "/images/iphone-12.png"
+image: "/images/iphone-12.webp"
 ---
 
 蓝色的 iPhone 12,用了挺长一段时间的主力机。陪我拍了很多照片,也记录了不少想法。

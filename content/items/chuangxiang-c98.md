@@ -8,7 +8,7 @@ lost: ""
 disposal: ""
 source: "闲鱼二手"
 price: 70
-image: "/images/chuangxiang-c98.png"
+image: "/images/chuangxiang-c98.webp"
 ---
 
 闲鱼入手的创祥 C98 套件键盘,成交价 70 元。95 新几乎没怎么用过,95% 紧凑配列。

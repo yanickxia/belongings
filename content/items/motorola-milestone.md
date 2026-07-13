@@ -8,7 +8,7 @@ lost: "2020"
 disposal: "损坏"
 source: "自购"
 price: 0
-image: "/images/motorola-milestone.jpg"
+image: "/images/motorola-milestone.webp"
 ---
 
 经典的侧滑全键盘 Android 手机,黑色机身配上实体 QWERTY 键盘,是那个触屏尚未一统天下的年代的代表作。

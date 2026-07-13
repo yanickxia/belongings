@@ -3,7 +3,19 @@
   <a class="back" href="{{ "/" | relURL }}">← 返回全部物品</a>
   <h1>{{ .Title }}</h1>
 
-  {{ with .Params.image }}<img class="detail-img" src="{{ strings.TrimPrefix "/" . | relURL }}" alt="{{ $.Title }}">{{ end }}
+  {{ $imgs := slice }}
+  {{ with .Params.image }}{{ $imgs = $imgs | append . }}{{ end }}
+  {{ with .Params.photos }}{{ range . }}{{ $imgs = $imgs | append . }}{{ end }}{{ end }}
+  {{ if $imgs }}
+  <div class="gallery{{ if gt (len $imgs) 1 }} gallery--multi{{ end }}">
+    {{ range $i, $src := $imgs }}
+    <figure class="gallery-item">
+      <img class="detail-img" src="{{ strings.TrimPrefix "/" $src | relURL }}" alt="{{ $.Title }}" loading="lazy">
+      {{ if and (gt (len $imgs) 1) (gt $i 0) }}<figcaption>实拍</figcaption>{{ end }}
+    </figure>
+    {{ end }}
+  </div>
+  {{ end }}
 
   <table class="meta">
     <tr><th>分类</th><td>{{ .Params.category | default "—" }}</td></tr>
@@ -12,6 +24,9 @@
     <tr><th>去向</th><td>{{ .Params.disposal | default "—" }}</td></tr>
     <tr><th>来源</th><td>{{ .Params.source | default "—" }}</td></tr>
     <tr><th>购入价格</th><td>{{ if .Params.price }}¥{{ .Params.price }}{{ else }}—{{ end }}</td></tr>
+    {{ with .Params.switch }}<tr><th>轴体</th><td>{{ . }}</td></tr>{{ end }}
+    {{ with .Params.mode }}<tr><th>连接</th><td>{{ . }}</td></tr>{{ end }}
+    {{ with .Params.lighting }}<tr><th>灯位</th><td>{{ . }}</td></tr>{{ end }}
   </table>
 
   <div class="content">

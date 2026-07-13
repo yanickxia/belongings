@@ -8,7 +8,7 @@ lost: "2018"
 disposal: "损坏"
 source: "自购"
 price: 0
-image: "/images/oneplus-3t.png"
+image: "/images/oneplus-3t.webp"
 ---
 
 2018 年使用的一加 3T,金属一体机身、流畅的氢/氧 OS,当年口碑很好的"水桶机"。

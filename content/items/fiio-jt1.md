@@ -8,7 +8,7 @@ lost: ""
 disposal: ""
 source: "闲鱼二手"
 price: 220
-image: "/images/fiio-jt1.png"
+image: "/images/fiio-jt1.webp"
 ---
 
 2024 年 7 月在闲鱼入手的飞傲 FiiO JT1 头戴式耳机,成交价 220 元。飞傲入门有线大耳,做工和音质都对得起价格。
