@@ -7,9 +7,15 @@
   <div class="stat"><span class="num">{{ len (where $items "Params.lost" "") }}</span><span class="lbl">仍拥有</span></div>
 </section>
 
-<div class="grid">
+<div class="search">
+  <input type="search" id="search-input" placeholder="搜索物品名称、分类、轴体、来源…" autocomplete="off" aria-label="搜索物品">
+  <span class="search-count" id="search-count"></span>
+</div>
+
+<div class="grid" id="item-grid">
   {{ range $items.ByParam "acquired" | collections.Reverse }}
-  <a class="card" href="{{ .RelPermalink }}">
+  <a class="card" href="{{ .RelPermalink }}"
+     data-search="{{ lower (printf "%s %s %s %s %s %s %s" .Title .Params.category .Params.switch .Params.mode .Params.source .Params.acquired .Params.lost) }}">
     {{ with .Params.image }}<div class="card-img" style="background-image:url('{{ strings.TrimPrefix "/" . | relURL }}')"></div>
     {{ else }}<div class="card-img card-img--empty">📦</div>{{ end }}
     <div class="card-body">
@@ -26,4 +32,33 @@
   </a>
   {{ end }}
 </div>
+<p class="search-empty" id="search-empty" hidden>没有匹配的物品。</p>
+
+<script>
+(function () {
+  var input = document.getElementById('search-input');
+  var grid = document.getElementById('item-grid');
+  var empty = document.getElementById('search-empty');
+  var count = document.getElementById('search-count');
+  if (!input || !grid) return;
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+
+  function apply() {
+    var q = input.value.trim().toLowerCase();
+    var shown = 0;
+    cards.forEach(function (c) {
+      var hit = !q || (c.getAttribute('data-search') || '').indexOf(q) !== -1;
+      c.style.display = hit ? '' : 'none';
+      if (hit) shown++;
+    });
+    empty.hidden = shown !== 0;
+    count.textContent = q ? (shown + ' / ' + cards.length) : '';
+  }
+
+  input.addEventListener('input', apply);
+  // 支持从 URL ?q= 预填
+  var m = /[?&]q=([^&]+)/.exec(location.search);
+  if (m) { input.value = decodeURIComponent(m[1].replace(/\+/g, ' ')); apply(); }
+})();
+</script>
 {{ end }}
