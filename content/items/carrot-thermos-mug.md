@@ -6,9 +6,11 @@ category: "生活用品"
 acquired: "2026"
 lost: ""
 disposal: ""
-source: "闲鱼"
+source: "闲鱼二手"
 price: 20
 image: "/images/carrot-thermos-mug.webp"
+photos:
+  - "/images/real-carrot-thermos-mug.webp"
 ---
 
-2026 年闲鱼购入的全新卡罗特保温杯，陶瓷覆层内胆咖啡杯。原价 ¥30，成交价 ¥20。陶瓷覆层内胆不串味，适合喝咖啡，带盖保温。
+2026 年 7 月闲鱼入手的全新卡罗特 CAROTE 随行咖啡杯（奶咖色），成交价 20 元（原价 30 元）。陶瓷覆层内胆不串味、带翻盖保温，配同色织带背带，通勤随行的第二只同款，目前在用。
